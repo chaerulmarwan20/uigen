@@ -7,9 +7,7 @@ import { SignInForm } from "@/components/auth/SignInForm";
 export default async function SignInPage() {
   const user = await getUser();
 
-  if (user) {
-    redirect("/");
-  }
+  if (user) redirect("/");
 
   return (
     <div className="min-h-screen bg-neutral-50 flex items-center justify-center p-4">
