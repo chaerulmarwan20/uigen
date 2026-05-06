@@ -64,9 +64,9 @@ export function MainContent({ user, project }: MainContentProps) {
                 <div className="h-14 border-b border-neutral-200/60 px-6 flex items-center justify-between bg-neutral-50/50">
                   <Tabs
                     value={activeView}
-                    onValueChange={(v) =>
-                      setActiveView(v as "preview" | "code")
-                    }
+                    onValueChange={(v) => {
+                      setActiveView(v as "preview" | "code");
+                    }}
                   >
                     <TabsList className="bg-white/60 border border-neutral-200/60 p-0.5 h-9 shadow-sm">
                       <TabsTrigger
