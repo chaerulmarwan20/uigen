@@ -44,7 +44,7 @@ export function MainContent({ user, project }: MainContentProps) {
                 {/* Chat Header */}
                 <div className="h-14 flex items-center px-6 border-b border-neutral-200/60">
                   <h1 className="text-lg font-semibold text-neutral-900 tracking-tight">
-                    Generator Komponen React Berbasis AI
+                    Generator Komponen React
                   </h1>
                 </div>
 
