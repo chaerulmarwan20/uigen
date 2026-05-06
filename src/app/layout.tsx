@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "UIGen - Generator Komponen React",
+  title: "UIGen - Generator Komponen React Berbasis AI",
   description: "Buat komponen React dengan bantuan AI",
 };
 
