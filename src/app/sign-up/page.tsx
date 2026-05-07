@@ -26,7 +26,7 @@ export default async function SignUpPage() {
             Buat akun baru
           </h1>
           <p className="text-sm text-neutral-500 mt-1">
-            Daftar untuk mulai membuat komponen React berbasis AI
+            Daftar untuk mulai membuat komponen React
           </p>
         </div>
 
