@@ -47,10 +47,6 @@ export function MainContent({ user, project }: MainContentProps) {
                     Generator Komponen React
                   </h1>
                 </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                similique, optio totam porro fuga obcaecati laboriosam quaerat
-                placeat distinctio blanditiis expedita accusamus eos neque ipsa
-                error tempore possimus nemo voluptates!
                 {/* Chat Content */}
                 <div className="flex-1 overflow-hidden">
                   <ChatInterface />
