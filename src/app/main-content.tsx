@@ -71,13 +71,13 @@ export function MainContent({ user, project }: MainContentProps) {
                     <TabsList className="bg-white/60 border border-neutral-200/60 p-0.5 h-9 shadow-sm">
                       <TabsTrigger
                         value="preview"
-                        className="data-[state=active]:bg-white data-[state=active]:text-neutral-900 data-[state=active]:shadow-sm text-neutral-600 px-4 py-1.5 text-sm font-medium transition-all cursor-pointer"
+                        className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-sm text-neutral-600 px-4 py-1.5 text-sm font-medium transition-all cursor-pointer"
                       >
                         Pratinjau
                       </TabsTrigger>
                       <TabsTrigger
                         value="code"
-                        className="data-[state=active]:bg-white data-[state=active]:text-neutral-900 data-[state=active]:shadow-sm text-neutral-600 px-4 py-1.5 text-sm font-medium transition-all cursor-pointer"
+                        className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-sm text-neutral-600 px-4 py-1.5 text-sm font-medium transition-all cursor-pointer"
                       >
                         Kode
                       </TabsTrigger>
