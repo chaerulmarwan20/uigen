@@ -17,17 +17,20 @@ async function main() {
   const hookData = JSON.parse(input);
   const toolName = hookData.tool_name;
   const toolInput = hookData.tool_input;
+  const readPath =
+    toolInput?.file_path ||
+    toolInput?.path ||
+    toolInput?.command ||
+    toolInput?.pattern ||
+    "";
 
   log(`post-tool-use ${JSON.stringify(hookData)}`);
-  log(
-    `🎉 Tool ${toolName} selesai dipanggil pada file ${toolInput?.file_path ?? "N/A"}`,
-  );
+  log(`🎉 Tool ${toolName} selesai dipanggil pada file ${readPath}`);
 
-  process.exit(0); // jika ingin melanjutkan memakai tool, berlaku untuk PreToolUse dan PostToolUse
-  // process.exit(2); // jika ingin memblokir tool, hanya berlaku untuk PreToolUse
+  process.exit(0); // jika ingin melanjutkan untuk memakai tool, berlaku untuk PreToolUse dan PostToolUse
 }
 
 main().catch((err) => {
-  console.error(`Hook error: ${err.message}`);
+  console.error(`Hook post-tool-use error: ${err.message}`);
   process.exit(1);
 });
