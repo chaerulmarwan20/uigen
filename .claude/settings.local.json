@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": ["mcp__playwright"],
+    "deny": []
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read|Write|Edit|MultiEdit|Grep|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node /Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-in-action/uigen/hooks/start.js"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Read|Write|Edit|MultiEdit|Grep|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node /Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-in-action/uigen/hooks/end.js"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": ["mcp__playwright"],
+    "deny": []
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read|Write|Edit|MultiEdit|Grep|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node $PWD/hooks/start.js"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Read|Write|Edit|MultiEdit|Grep|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node $PWD/hooks/end.js"
+          }
+        ]
+      }
+    ]
+  }
+}

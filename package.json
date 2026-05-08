@@ -11,7 +11,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "setup": "npm install && npx prisma generate && npx prisma migrate dev",
-    "db:reset": "npx prisma migrate reset --force"
+    "db:reset": "npx prisma migrate reset --force",
+    "init-claude": "node ./scripts/init-claude.js"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "1.2.12",
