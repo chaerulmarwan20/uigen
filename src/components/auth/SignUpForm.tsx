@@ -71,14 +71,14 @@ export function SignUpForm({ onSuccess }: SignUpFormProps) {
           <button
             type="button"
             onClick={() => setShowPassword(!showPassword)}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-600 cursor-pointer disabled:cursor-not-allowed"
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground cursor-pointer disabled:cursor-not-allowed"
             tabIndex={-1}
             disabled={isLoading}
           >
             {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
           </button>
         </div>
-        <p className="text-xs text-gray-500">
+        <p className="text-xs text-muted-foreground">
           Minimal 8 karakter
         </p>
       </div>
@@ -99,7 +99,7 @@ export function SignUpForm({ onSuccess }: SignUpFormProps) {
           <button
             type="button"
             onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-600 cursor-pointer disabled:cursor-not-allowed"
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground cursor-pointer disabled:cursor-not-allowed"
             tabIndex={-1}
             disabled={isLoading}
           >

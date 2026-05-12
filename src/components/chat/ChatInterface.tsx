@@ -28,13 +28,13 @@ export function ChatInterface() {
     <div className="flex flex-col h-full p-4 overflow-hidden">
       {messages.length === 0 ? (
         <div className="flex-1 flex flex-col items-center justify-center px-4 text-center">
-          <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-blue-50 mb-4 shadow-sm">
+          <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-blue-50 dark:bg-blue-950 mb-4 shadow-sm">
             <Bot className="h-7 w-7 text-blue-600" />
           </div>
-          <p className="text-neutral-900 font-semibold text-lg mb-2">
+          <p className="text-foreground font-semibold text-lg mb-2">
             Mulai percakapan untuk membuat komponen React
           </p>
-          <p className="text-neutral-500 text-sm max-w-sm">
+          <p className="text-muted-foreground text-sm max-w-sm">
             Saya bisa membantu membuat tombol, formulir, kartu, dan lainnya
           </p>
         </div>

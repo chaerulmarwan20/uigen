@@ -101,9 +101,9 @@ export function PreviewFrame() {
   if (error) {
     if (error === "firstLoad") {
       return (
-        <div className="h-full flex items-center justify-center p-8 bg-gray-50">
+        <div className="h-full flex items-center justify-center p-8 bg-muted">
           <div className="text-center max-w-md">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-950 mb-4">
               <svg
                 className="h-8 w-8 text-blue-600"
                 fill="none"
@@ -118,13 +118,13 @@ export function PreviewFrame() {
                 />
               </svg>
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+            <h3 className="text-lg font-semibold text-foreground mb-2">
               Selamat datang di UI Generator
             </h3>
-            <p className="text-sm text-gray-600 mb-3">
+            <p className="text-sm text-muted-foreground mb-3">
               Mulai bangun komponen React dengan bantuan AI
             </p>
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-muted-foreground/70">
               Minta AI untuk membuat komponen pertama Anda dan lihat hasilnya di sini
             </p>
           </div>
@@ -133,16 +133,16 @@ export function PreviewFrame() {
     }
 
     return (
-      <div className="h-full flex items-center justify-center p-8 bg-gray-50">
+      <div className="h-full flex items-center justify-center p-8 bg-muted">
         <div className="text-center max-w-md">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-4">
-            <AlertCircle className="h-8 w-8 text-gray-400" />
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-muted-foreground/10 mb-4">
+            <AlertCircle className="h-8 w-8 text-muted-foreground" />
           </div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">
+          <h3 className="text-lg font-semibold text-foreground mb-2">
             Pratinjau Tidak Tersedia
           </h3>
-          <p className="text-sm text-gray-500">{error}</p>
-          <p className="text-xs text-gray-400 mt-2">
+          <p className="text-sm text-muted-foreground">{error}</p>
+          <p className="text-xs text-muted-foreground/70 mt-2">
             Mulai dengan membuat komponen React menggunakan asisten AI
           </p>
         </div>

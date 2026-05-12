@@ -63,7 +63,7 @@ export function SignInForm({ onSuccess }: SignInFormProps) {
           <button
             type="button"
             onClick={() => setShowPassword(!showPassword)}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-neutral-600 cursor-pointer disabled:cursor-not-allowed"
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground cursor-pointer disabled:cursor-not-allowed"
             tabIndex={-1}
             disabled={isLoading}
           >

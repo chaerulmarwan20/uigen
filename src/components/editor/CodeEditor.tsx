@@ -1,12 +1,14 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import Editor from "@monaco-editor/react";
 import { useFileSystem } from "@/lib/contexts/file-system-context";
+import { useTheme } from "@/lib/contexts/theme-context";
 import { Code2 } from "lucide-react";
 
 export function CodeEditor() {
   const { selectedFile, getFileContent, updateFile } = useFileSystem();
+  const { isDark } = useTheme();
   const editorRef = useRef<any>(null);
 
   const handleEditorDidMount = (editor: any) => {
@@ -43,13 +45,13 @@ export function CodeEditor() {
 
   if (!selectedFile) {
     return (
-      <div className="h-full flex items-center justify-center bg-gray-900">
+      <div className="h-full flex items-center justify-center bg-background">
         <div className="text-center">
-          <Code2 className="h-12 w-12 text-gray-600 mx-auto mb-3" />
-          <p className="text-sm text-gray-500">
+          <Code2 className="h-12 w-12 text-muted-foreground/40 mx-auto mb-3" />
+          <p className="text-sm text-muted-foreground">
             Pilih file untuk diedit
           </p>
-          <p className="text-xs text-gray-600 mt-1">
+          <p className="text-xs text-muted-foreground/60 mt-1">
             Pilih file dari pohon direktori
           </p>
         </div>
@@ -67,7 +69,7 @@ export function CodeEditor() {
       value={content}
       onChange={handleEditorChange}
       onMount={handleEditorDidMount}
-      theme="vs-dark"
+      theme={isDark ? "vs-dark" : "light"}
       options={{
         minimap: { enabled: false },
         fontSize: 14,

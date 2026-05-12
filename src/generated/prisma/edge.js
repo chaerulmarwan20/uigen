@@ -133,7 +133,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-in-action/uigen/src/generated/prisma",
+      "value": "/Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-101/uigen/src/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -147,11 +147,12 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-in-action/uigen/prisma/schema.prisma",
+    "sourceFilePath": "/Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-101/uigen/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null
+    "rootEnvPath": null,
+    "schemaEnvPath": "../../../.env"
   },
   "relativePath": "../../../prisma",
   "clientVersion": "6.10.1",
