@@ -1,4 +1,8 @@
-Generate pesan commit interaktif yang memberikan pilihan antara mode Jira (CDE) atau mode biasa berdasarkan perubahan kode.
+---
+name: smart-commit
+description: Skill commit interaktif yang memberikan pilihan antara mode Jira (CDE) atau mode biasa.
+usage: smart-commit
+---
 
 # Role
 
