@@ -1,13 +1,27 @@
 {
+  "permissions": {
+    "allow": ["mcp__playwright"],
+    "deny": []
+  },
   "enabledMcpjsonServers": ["playwright"],
   "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node /Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-101/uigen/hooks/prompt_submit.js"
+          }
+        ]
+      }
+    ],
     "PreToolUse": [
       {
         "matcher": "Read|Write|Edit|MultiEdit|Grep|Bash",
         "hooks": [
           {
             "type": "command",
-            "command": "node /Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-in-action/uigen/hooks/start.js"
+            "command": "node /Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-101/uigen/hooks/start.js"
           }
         ]
       }
@@ -18,7 +32,27 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node /Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-in-action/uigen/hooks/end.js"
+            "command": "node /Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-101/uigen/hooks/end.js"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node /Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-101/uigen/hooks/stop.js"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node /Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-101/uigen/hooks/notif.js"
           }
         ]
       }

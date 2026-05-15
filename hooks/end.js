@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const log = (msg) => {
   fs.appendFileSync(
-    "/Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-in-action/uigen/logs/post-tool-use.log",
+    "/Users/chaerulmarwan/Desktop/development/anthropic-skilljar/claude-code-101/uigen/logs/post-tool-use.log",
     `${new Date()} - ${msg}\n`,
   );
 };
