@@ -67,7 +67,8 @@ Setiap kali skill ini dipanggil, ikuti alur kerja interaktif berikut:
    - Analisis hasil `git diff --cached` untuk menentukan tipe commit yang paling sesuai dan isi pesan yang deskriptif.
 
 5. **Generate Pesan Commit:**
-   - Buat perintah git commit lengkap dalam format: `git commit -m "CDE-[NOMOR]: type: Pesan"`
+   - Buat perintah git commit lengkap dalam format: `git commit -m "CDE-[NOMOR]: type: Pesan"` untuk mode commit jira
+   - Buat perintah git commit lengkap dalam format: `git commit -m "type: Pesan"` untuk mode commit standar
    - JANGAN tambahkan baris 'Co-authored-by' atau metadata AI lainnya. Pesan harus bersih.
    - Tampilkan perintah tersebut dalam blok kode.
    - Tanyakan: "Apakah Anda ingin langsung menjalankan perintah commit sekarang? (y/n)"
