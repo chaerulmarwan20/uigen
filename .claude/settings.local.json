@@ -1,8 +1,7 @@
 {
-  "permissions": {
-    "allow": ["mcp__playwright"],
-    "deny": []
-  },
+  "enabledMcpjsonServers": [
+    "playwright"
+  ],
   "hooks": {
     "PreToolUse": [
       {
@@ -26,5 +25,6 @@
         ]
       }
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true
 }
